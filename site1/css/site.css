@@ -164,7 +164,7 @@ background: url(../img/Frame\ 1.png);
 
 .section2 .s2_txt {
 padding-top: 150px;
-}
+}filter
 .section2 .s2_txt h1 {
   left: 40%;
 }
@@ -176,7 +176,7 @@ padding-top: 150px;
 .auto li:hover { opacity: 1; transform: scale(1.4); }
 
 
-.swiper-wrapper {width: 200%; height: 100%; overflow: hidden; position: relative;}
+.swiper-wrapper {width: 300%; height: 100%; position: relative;}
 .swiper-wrapper .swiper-slide { width: 500px; height: 500px; top: 10%; padding: 30px; box-sizing: border-box; opacity: .4; transition: 1s; }
 
  .swiper-button-prev { left: auto; right: 100px; top: auto; bottom: 60px; filter: grayscale(100%) brightness(3); transform: scale(0.5);}

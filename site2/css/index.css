@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+/* reset */
+* {margin:0; padding:0; font:inherit; color:inherit;}
+*, :after, :before {box-sizing:border-box;flex-shrink:0;}
+:root { -webkit-tap-highlight-color:transparent; -webkit-text-size-adjust:100%;
+    text-size-adjust:100%; cursor:default; line-height:1.5; overflow-wrap:break-word; word-break:break-word; tab-size:4}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+ul,dl{list-style-type: none;}
+
+#wrap{
+  width: 100%;
+  height: 100%;
+}
+
+html > body {
+  min-width: 600px;
+  margin: 0;
+}
+
+/* 폰트 */
+*{
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* 공통 레이아웃,공동 스타일 */
+
+.inner_wrap{
+  width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+strong {
+  color: blue;
+  font-weight: 700;
+}
+
+span {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* header */
+
+header {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e5e5e5;
+}
+header .inner_wrap {
+  position: relative;
+}
+
+header .header_top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header_top .left_Htop {
+display: flex;
+}
+.header_top .left_Htop ul {
+  display: flex;
+gap: 30px;
+}
+.header_top .right_Htop {
+  display: flex;
+}
+.header_top .right_Htop ul {
+  display: flex;
+gap: 10px;
+}
+.right_Htop ul li .lo2 {
+  font-family: 400;
+font-size: 16px;
+}
+
+
+
+/* 상단 네비게이션 바 */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* 네비게이션 바의 내부 요소들 */
+.topnav .inner_wrap {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  height: 50px;
+}
+
+/* 드롭다운 메뉴 버튼 */
+.dropdown a {
+ color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* 드롭다운 하위메뉴 */
+.dropdown ul li a {
+ color: #111;
+  text-align: center;
+}
+
+/* 드롭다운 메뉴의 컨텐츠 */
+.dropdown-content, .dropdown-content_first {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* 드롭다운 메뉴의 컨텐츠에 마우스 호버시 */
+.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content_first {
+  display: block;
+}
+
+/* 검색 컨테이너 */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+/* 검색 입력 필드 */
+.search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+/* 검색 버튼 */
+.search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-left: 10px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+/* 카트 아이콘 */
+.cart svg {
+  height: 30px;
+  width: 30px;
+}
+
+/* 카트 드롭다운 */
+.cart-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* 카트 아이콘에 마우스 호버시 */
+.cart:hover .cart-dropdown {
+  display: block;
+}
+
+
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+
+.slide {
+  width: 25%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prev, .next {
+  border: none;
+  background: transparent;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+  color: #999;
+}
