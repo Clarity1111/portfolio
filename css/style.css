@@ -182,6 +182,7 @@ dd {
     width: 333px;
     height: 333px;
     background-color: #eee;
+    object-fit: scale-down;
 }
 
 [class^=cwi] a {
@@ -216,6 +217,7 @@ margin-bottom: 40px;
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 20px;
+    object-fit: scale-down;
 }
 .design img:nth-child(1) {
     background: rgba(0, 0, 0, 0.3);
@@ -281,7 +283,7 @@ text-decoration:underline;
     font-weight: 700; position: fixed; 
 }
 .bar .select_bar { 
-    position: fixed; width: 20rem; top: 50%;  transform: translateY(-100%); z-index: 10;
+    position: fixed; top: 50%;  transform: translateY(-100%); z-index: 10; left: 15px;
 } 
 .bar .select_bar ul { 
     display: flex;

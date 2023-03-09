@@ -6,6 +6,7 @@
 :root { -webkit-tap-highlight-color:transparent; -webkit-text-size-adjust:100%;
     text-size-adjust:100%; cursor:default; line-height:1.5; overflow-wrap:break-word; word-break:break-word; tab-size:4}
 html, body {height:100%;}
+body {overflow-y:scroll}
 img, picture, video, canvas, svg {display: block;max-width:100%;}
 button {background:none;border:0;cursor:pointer;}
 a {text-decoration:none}
@@ -138,6 +139,7 @@ margin-top: 233px;
   height: 160px;
 margin-top: 83px;
 margin-left: 0;
+object-fit: scale-down;
 }
 .chronology .right_box img:nth-child(1) {
   display: block;
@@ -150,6 +152,7 @@ margin-top: 83px;
 min-width: 50%;
 height: 150px;
 margin-top: 83px;
+object-fit: scale-down;
 }
 .chronology .left_box img:nth-child(1) {
 margin-top: 160px;
@@ -164,7 +167,7 @@ background: url(../img/Frame\ 1.png);
 
 .section2 .s2_txt {
 padding-top: 150px;
-}
+}filter
 .section2 .s2_txt h1 {
   left: 40%;
 }
@@ -258,36 +261,3 @@ padding-top: 150px;
 margin-top: 100px;
 }
 
-
-/* keyframe */
-/* .visual .turn {
-  position: absolute;
-  top: 0;
-  right: 100px;
-  top: 85%;
-  z-index: 2;
-
-}
-.visual .turn img {
-  position: fixed;
-  border-radius: 50%;
-  max-width: 100px;
-  height: 100px;
-  animation: turn 5s linear infinite;
-}
-
-
-
-
- @keyframes turn {
-
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} */
