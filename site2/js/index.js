@@ -64,4 +64,12 @@ $(document).ready(function(){
     interval = setInterval(moveRight, 5000);
   });
 
+  // 메뉴에 마우스 올리면 dropdown 등장
+  $('.topnav .top_menu').hover(function(){
+    $('.topnav .dropdown').addClass('on')
+  });
+  // 이건 그걸 없애버리는 코드지요
+  $('.topnav').mouseleave(function(){
+    $('.topnav .dropdown').removeClass('on')
+  })
 });

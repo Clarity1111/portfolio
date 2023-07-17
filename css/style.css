@@ -180,7 +180,6 @@ dd {
 }
 .content_wrap2_image img {
     width: 333px;
-    height: 333px;
     background-color: #eee;
     object-fit: scale-down;
 }
