@@ -321,7 +321,6 @@ text-decoration:underline;
 @media all and (max-width: 767px) {
     body {
         display: block;
-        display: none;
         text-align: center;
     }
 }
