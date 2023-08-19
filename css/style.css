@@ -292,3 +292,28 @@ text-decoration:underline;
 .bar .select_bar ul li { 
     display: list-item; text-align: -webkit-match-parent;
 }
+
+
+/* 모니터 규격 */
+
+@media all and (min-width: 768px){
+
+}
+
+@media all and (min-width: 1024px){
+
+}
+
+/* 테블릿 규격 */
+@media all and (max-width: 1024px){
+
+}
+
+/* 모바일 규격 */
+@media all and (max-width: 768px){
+
+}
+
+/* 가로모드 */
+@media screen and (orientation: landscape){
+}
