@@ -50,7 +50,7 @@
                 </div>
                 <div class="content_wrap">
                     <div class="content_wrap_left">
-                        <img src="#" alt="#">
+                        <img src="img/프로필.png" alt="프로필사진">
                     </div>
                     <div class="content_wrap_right">
                         <div class="right_about_me">
@@ -105,22 +105,16 @@
                 <div class="contents">
                     <div class="content_wrap2_image">
                         <div class="cwi_right">
-                            <img src="img/Site1_Preview.png" alt="릴파 팬사이트">
-                            <p>스트리머 우왁굳이 제작/프로듀싱한 <br>
-                                버츄얼 스트리머 겸 유튜버 겸 아이돌<br>
-                            이세계아이돌의 릴파 팬 사이트입니다.</p>
-                                <a href="site1/site.html">링크</a>
+                            <img src="" alt="">
+                            <p>준비중</p>
+                            <img src="/" alt="uncommom">
+                                <a href="site3/index.html">링크</a>
                         </div>
                         <div class="cwi_center">
-                            <img src="#" alt="#">
-                            <p>준비중<br />
+                            <img src="img/20230717_140009.png" alt="K-bay">
+                            <p>K-bay<br />
                                  </p>
-                                <a href="#">링크</a>
-                        </div>
-                        <div class="cwi_left">
-                            <img src="#" alt="#">
-                            <p>준비중 <br /> </p>
-                                <a href="#">링크</a>
+                                <a href="site2/imdex.html">링크</a>
                         </div>
                     </div>
                 </div>
@@ -132,9 +126,9 @@
                     <h2>DESIGN.</h2>
                 </div>
                 <div class="design">
-                    <img src="img/design1.png" alt="d1">
-                    <img src="img/design2.png" alt="d2">
-                    <img src="#" alt="">
+                    <img src="img/cat shop.png" alt="d1" onclick="showImagePopup(this.src)">
+                    <img src="img/HELLDIVERS.png" alt="d2" onclick="showImagePopup(this.src)">
+                    <img src="img/PixelDesign.png" alt="d3" onclick="showImagePopup(this.src)">
                 </div>
             </div>
         </div>
@@ -162,7 +156,12 @@
                 </div>
             </div>
         </div>
+        <div id="imagePopup" style="display:none;">
+            <img id="popupImage" src="img/cat shop.png" alt="d1">
+            <img id="popupImage" src="img/HELLDIVERS.png" alt="d2">
+            <img id="popupImage" src="img/PixelDesign.png" alt="d3">
+            <button onclick="closePopup()">닫기</button>
+        </div>
     </div>
-</div>
 </body>
 </html>
