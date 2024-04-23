@@ -42,6 +42,17 @@ $(document).ready(function(){
       $('.bar li').eq(activeIndex).addClass('on');
   
     });
+    function showImagePopup(src) {
+      var popupImage = document.getElementById('popupImage');
+      popupImage.src = src;
+      var popup = document.getElementById('imagePopup');
+      popup.style.display = 'block';
+  }
+
+  function closePopup() {
+      var popup = document.getElementById('imagePopup');
+      popup.style.display = 'none';
+  }
   
 });
 

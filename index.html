@@ -126,8 +126,9 @@
                     <h2>DESIGN.</h2>
                 </div>
                 <div class="design">
-                    <img src="img/design1.png" alt="d1">
-                    <img src="img/design2.png" alt="d2">
+                    <img src="img/cat shop.png" alt="d1" onclick="showImagePopup(this.src)">
+                    <img src="img/HELLDIVERS.png" alt="d2" onclick="showImagePopup(this.src)">
+                    <img src="img/PixelDesign.png" alt="d3" onclick="showImagePopup(this.src)">
                 </div>
             </div>
         </div>
@@ -155,7 +156,12 @@
                 </div>
             </div>
         </div>
+        <div id="imagePopup" style="display:none;">
+            <img id="popupImage" src="img/cat shop.png" alt="d1">
+            <img id="popupImage" src="img/HELLDIVERS.png" alt="d2">
+            <img id="popupImage" src="img/PixelDesign.png" alt="d3">
+            <button onclick="closePopup()">닫기</button>
+        </div>
     </div>
-</div>
 </body>
 </html>
