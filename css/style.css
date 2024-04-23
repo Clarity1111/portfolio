@@ -230,8 +230,11 @@ margin-bottom: 40px;
 }
 .design {
     display: flex;
+    justify-content: flex-start;
     gap: 130px;
 }
+    
+
 .design img {
     width: 333px;
     height: 264px;
@@ -241,9 +244,9 @@ margin-bottom: 40px;
     margin-bottom: 20px;
     object-fit: scale-down;
 }
-.design img:nth-child(1) {
+/* .design img:nth-child(1) {
     background: rgba(0, 0, 0, 0.3);
-}
+} */
 
 .design a {
     padding: 10px 40px;
@@ -360,4 +363,35 @@ text-decoration:underline;
 }
 .bar .select_bar ul li { 
     display: list-item; text-align: -webkit-match-parent;
+}
+
+
+/* 모니터 규격 */
+
+@media all and (min-width: 1199px) {
+    body {
+        font-size: 18px;
+        line-height: 1.6;
+        flex-direction: column;
+        margin: 0px auto;
+    }
+}
+
+/* 테블릿 규격 */
+@media all and (min-width: 768px) and (max-width: 1199px) {
+    body {
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+}
+
+/* 모바일 규격 */
+@media all and (max-width: 767px) {
+    body {
+        font-size: 12px;
+        line-height: 1.3;
+        margin: 0;
+    }
 }
